@@ -50,3 +50,43 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'active_interaction'
+gem 'activeadmin', '~> 1.0.0.pre2'
+gem 'binding_of_caller'
+gem 'compass-rails', '~> 1.1.2'
+gem 'devise'
+gem 'dotenv-rails'
+gem 'flutie'
+gem 'high_voltage'
+gem 'jquery-rails'
+gem 'pg'
+gem 'pundit'
+gem 'simple_form'
+gem 'slim-rails'
+gem 'zurb-foundation', '~> 4.3.2'
+
+group :development do
+  gem 'better_errors'
+  gem 'haml2slim'
+  gem 'html2haml'
+  gem 'hub', :require=>nil
+  gem 'mail_view'
+  gem 'mailcatcher'
+  gem 'rails_apps_pages'
+  gem 'rails_apps_testing'
+  gem 'rails_layout'
+  gem 'spring-commands-rspec'
+end
+
+group :development, :test do
+  gem 'factory_girl_rails'
+  gem 'faker'
+  gem 'rspec-rails'
+end
+
+group :test do
+  gem 'database_cleaner'
+  gem 'launchy'
+end
+
